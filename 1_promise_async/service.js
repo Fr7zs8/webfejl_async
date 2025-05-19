@@ -14,7 +14,7 @@ class Service{
     }
 
     initInvalid(){
-        return new Promise((reject) =>{
+        return new Promise((_ , reject) =>{
             setTimeout(() => {
                 reject("Nem valid");
             })
