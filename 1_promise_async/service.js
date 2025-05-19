@@ -22,7 +22,7 @@ class Service{
     }
 
     realInit(num){
-        return Promise((resolve, reject) =>{
+        return new Promise((resolve, reject) =>{
             if(num < 2){
                 setTimeout(() =>{
                     resolve("Kettönél kevesebb van.")
